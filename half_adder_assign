@@ -1,0 +1,13 @@
+module half_adder_assign
+(
+	input  x1,	
+	input  x2,
+	output s_o,
+	output c_o
+);
+
+assign s_o = x1 ^ x2;
+assign c_o = x1 & x2;
+
+endmodule
+
