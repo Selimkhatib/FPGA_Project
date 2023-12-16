@@ -1,0 +1,12 @@
+module full_adder_assign
+(
+	input  [1:0] x1,        // x1 değişkenini 2 bitlik bir sayıya çevirdim.
+	input  [1:0] x2,		   // 2 bitlik bir full adder oluşturdum.
+	input	 c_i,
+	output [1:0] s_o,
+	output c_o
+);
+
+assign {c_o,s_o} = x1 + x2 + c_i;
+
+endmodule
